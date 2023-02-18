@@ -53,11 +53,12 @@ header {
     display: flex;
     width: 100%;
     color: #fff;
-    padding: 0px 50px;
+    padding: 0px 30px;
 }
 
 #hero .informacion-contenedor #foto {
-    width: 200px;
+    width: 100%;
+    max-width: 188px;
 }
 
 #hero .informacion-contenedor #foto img {
@@ -66,13 +67,19 @@ header {
 
 #hero .informacion-contenedor .informacion {
     margin-left: 20px;
-    font-size: 180%;
+    font-size: 100%;
     font-weight: bold;
-    -webkit-text-stroke: black 2px;
+    -webkit-text-stroke: black 1px;
 }
 
 #hero .informacion-contenedor .informacion a {
     display: inline-block;
     color: #b5b5b5;
     margin-bottom: 70px;
+}
+
+/* EStilos del main */
+
+main {
+    padding: 100px;
 }
