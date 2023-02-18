@@ -83,3 +83,44 @@ header {
 main {
     padding: 100px;
 }
+
+main .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    list-style: none;
+}
+
+main .social-icons li{
+    margin-left: 8px;
+}
+
+main .social-icons .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+main .social-icons #linkedin {
+    background: #0077b0;
+}
+
+main .social-icons #github {
+    background-color: #23272d;
+}
+
+main .social-icons #instagram {
+    background: #e7c83b;
+}
+
+main .social-icons #platzi {
+    background: #121f3d;
+}
+
+main .social-icons #youtube {
+    background: red;
+}
