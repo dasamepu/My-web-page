@@ -57,8 +57,10 @@ header {
 }
 
 #hero .informacion-contenedor #foto {
-    width: 100%;
-    max-width: 188px;
+    width: 50%;
+    height: 50%;
+    max-width: 600px;
+    max-height: 600px;
 }
 
 #hero .informacion-contenedor #foto img {
@@ -66,10 +68,12 @@ header {
 }
 
 #hero .informacion-contenedor .informacion {
-    margin-left: 20px;
+    padding-left: 20px;
     font-size: 100%;
     font-weight: bold;
     -webkit-text-stroke: black 0.8px;
+    width: calc(100% - 500px);
+    min-width: 195px;
 }
 
 #hero .informacion-contenedor .informacion a {
@@ -123,4 +127,24 @@ main .social-icons #platzi {
 
 main .social-icons #youtube {
     background: red;
+}
+
+@media (min-width: 782px) {
+    #logo {
+        width: 75px;
+    }
+
+    #hero .informacion-contenedor .informacion {
+        font-size: 130%;
+    }
+}
+
+@media (min-width: 1100px) {
+    #logo {
+        width: 100px;
+    }
+
+    #hero .informacion-contenedor .informacion {
+        font-size: 230%;
+    }
 }
