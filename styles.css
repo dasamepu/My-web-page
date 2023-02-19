@@ -147,4 +147,8 @@ main .social-icons #youtube {
     #hero .informacion-contenedor .informacion {
         font-size: 230%;
     }
+
+    main p{
+        font-size: 30px;
+    }
 }
