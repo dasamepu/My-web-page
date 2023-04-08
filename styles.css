@@ -211,6 +211,10 @@ main .social-icons #nostr img {
         width: 75px;
     }
 
+    .header-nav {
+        padding-top: 1.5%;
+    }
+
     .header-nav .header-list li a{
         padding-left: 20px;
         font-size: 200%;
@@ -224,6 +228,15 @@ main .social-icons #nostr img {
 @media (min-width: 1100px) {
     #logo {
         width: 100px;
+    }
+
+    .header-nav {
+        padding-top: 2%;
+    }
+
+    .header-nav .header-list li a{
+        padding-left: 20px;
+        font-size: 250%;
     }
 
     #hero .informacion-contenedor .informacion {
