@@ -112,7 +112,6 @@ main .social-icons li{
 
 main .social-icons .social-icon {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 15px;
