@@ -23,6 +23,8 @@ body {
 header {
     background: #1f1f1f;
     padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #logo {
@@ -32,6 +34,15 @@ header {
 #logo img {
     border-radius: 100%;
     border: 2px solid white;
+}
+
+.header-nav {
+    text-align: right;
+    padding-top: 3.5%;
+}
+
+.header-nav .header-list li {
+    display: inline-block;
 }
 
 /* Acá estan los estilos de hero */
@@ -85,7 +96,7 @@ header {
 /* EStilos del main */
 
 main {
-    padding: 100px;
+    padding: 48px;
 }
 
 main .social-icons {
@@ -101,6 +112,7 @@ main .social-icons li{
 
 main .social-icons .social-icon {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 15px;
@@ -121,6 +133,10 @@ main .social-icons #instagram {
     background: #e7c83b;
 }
 
+main .social-icons #instagram img{
+    width: 25px;
+}
+
 main .social-icons #platzi {
     background: #121f3d;
 }
@@ -129,9 +145,75 @@ main .social-icons #youtube {
     background: red;
 }
 
-@media (min-width: 782px) {
+main .social-icons #nostr {
+    background: #17212A;
+}
+
+main .social-icons #nostr img {
+    width: 25px;
+}
+
+@media (max-width: 319px) {
+    header {
+        padding: 10px 10px;
+    }
+    
+    .header-nav .header-list li a{
+        padding-left: 5px;
+        font-size: 100%;
+    }
+    
+    #hero .informacion-contenedor {
+        padding: 10px 30px;
+    }
+
+    main .social-icons li {
+        width: 36px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    header {
+        padding: 10px 30px;
+    }
+    
+    .header-nav .header-list li a{
+        padding-left: 5px;
+        font-size: 110%;
+    }
+    
+    main .social-icons li {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 781px) {
+    header {
+        padding: 10px 30px;
+    }
+    
+    .header-nav {
+        padding-top: 2%;
+    }
+
+    .header-nav .header-list li a{
+        padding-left: 12.5px;
+        font-size: 140%;
+    }
+    
+    main .social-icons li {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width: 782px) and (max-width: 1099px) {
     #logo {
         width: 75px;
+    }
+
+    .header-nav .header-list li a{
+        padding-left: 20px;
+        font-size: 200%;
     }
 
     #hero .informacion-contenedor .informacion {
