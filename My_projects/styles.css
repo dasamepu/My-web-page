@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1{
+    color: red;
+    padding: 0px 30px;
+    margin: 30px;
+}
+
+.button {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.button h2 {
+    text-align: center;
+}
+
+.button .image-container img{
+    width: 300px;
+}
+
+.button #image-container_karate{
+    height: 296.302px;
+}
+
+#karate-button{
+    margin-top: 10px;
+}
