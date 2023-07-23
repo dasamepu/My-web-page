@@ -45,9 +45,22 @@
 
     <h2>Evita Imprecisiones</h2>
     <p>Dados los anteriores tips es facil caer en la trampa de querer hacerse el inteligente y potencialmente crear descripciones imprecisas, normalmente lo mejor es ser especifico y directo. Es como en la comunicación, mientras mas directo seas mas efectivamente se transmite el mensaje.</p>
+    <p>En vez de escribir un prompt donde los requisitos son ambiguos como:</p>
+    <code>Explique el concepto de "Prompt Engineering". La explicación debe ser breve, de pocas frases, y no demasiado descriptiva.
+    </code>
+    <p>Es mejor ser precisos en lo que deseamos, por ejemplo:</p>
+    <code>Utiliza 2-3 frases para explicar el concepto de "Prompt Engineering" a un estudiante de secundaria.</code>
 
-    <h2></h2>
-    <p></p>
+    <h2>Qué hacer y qué no hacer</h2>
+    <p>Otro tip al diseñar prompts es evitar decir "qué no hacer", en vez de eso es mejor decir "qué hacer", esto promueve mas especificidad y se enfoca en los detalles que guían a una buena respuesta. Por ejemplo, en el siguiente ejemplo se le dice al modelo qué no hacer: </p>
+    <code>The following is an agent that recommends movies to a customer. DO NOT ASK FOR INTERESTS. DO NOT ASK FOR PERSONAL INFORMATION.</code><p></p>
+    <code>Customer: Please recommend a movie based on my interests.</code><p></p>
+    <code>Agent: </code>
+    <p>En vez de eso podemos decirle al modelo qué hacer:</p>
+    <code>The following is an agent that recommends movies to a customer. The agent is responsible to recommend a movie from the top global trending movies. It should refrain from asking users for their preferences and avoid asking for personal information. If the agent doesn't have a movie to recommend, it should respond "Sorry, couldn't find a movie to recommend today."</code><p></p>
+    <code>Customer: Please recommend a movie based on my interests.</code><p></p>
+    <code>Agent:</code><p></p>
+
 
     </body>
 </html>
