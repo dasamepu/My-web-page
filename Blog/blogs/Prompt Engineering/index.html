@@ -61,6 +61,45 @@
     <code>Customer: Please recommend a movie based on my interests.</code><p></p>
     <code>Agent:</code><p></p>
 
+    <h1>Buenas practicas para prompt engineering con la API de OpenAI</h1>
+    
+    <h2>Usa el ultimo modelo</h2>
+    <p>Para Noviembre 2022 las mejores opciones son "text-davinci-003" para generación de texto y "code-davinci-002" para generación de codigo.</p>
+
+    <h2>Pon las intrucciones al inicio del prompt y usa ### o """ para separar la instruccion y el contexto</h2>
+    <code>Resuma el texto siguiente en forma de lista con los puntos más importantes.</code><p></p>
+    <code>Texto: """</code><p></p>
+    <code>{introducir texto aquí}</code><p></p>
+    <code>"""</code><p></p>
+
+    <h2>Se especifico, descriptivo y tan detallado como sea posible el contexto, la salida, el largo, el formato, estilo, etc.</h2>
+    <code>Escribe un breve poema inspirador sobre OpenAI, centrado en el reciente lanzamiento del producto DALL-E (DALL-E es un modelo ML de texto a imagen) al estilo de un {poeta famoso}.</code>
+
+    <h2>Articula el formato de output deseado a través de ejemplos, los modelos responden mejor cuando se les muestra el formato especifico que quieres que el modelo te muestre, por ejemplo: </h2>
+    <code>Extraiga las entidades importantes mencionadas en el texto siguiente. En primer lugar, extraiga todos los nombres de empresas; a continuación, extraiga todos los nombres de personas; después, extraiga los temas específicos que se ajusten al contenido y, por último, extraiga los temas generales.</code><p></p>
+    <code>Formato deseado:</code><p></p>
+    <code>Nombres de empresas: "lista_de_nombres_de_empresa_separada_por_comas"</code><p></p>
+    <code>Nombres de personas: -||-</code><p></p>
+    <code>Temas específicos: -||-</code><p></p>
+    <code>Temas generales: -||-</code><p></p>
+    <code>Texto: {texto}</code><p></p>
+
+    <h2>Empieza con "Zero-shot", despues con "Few-shot" y si ninguna de las dos funciona usa "Fine-tune"</h2>
+    <h3>Zero-shot:</h3>
+    <code>Extract keywords from the below text.</code><p></p>
+    <code>Text: {text}</code><p></p>
+    <code>Keywords:</code><p></p>
+    <h3>Few-shot (da algunos ejemplos):</h3>
+    <code>Extract keywords from the corresponding texts below.</code><p></p>
+    <code>Text 1: Stripe provides APIs that web developers can use to integrate payment processing into their websites and mobile applications.</code><p></p>
+    <code>Keywords 1: Stripe, payment processing, APIs, web developers, websites, mobile applications</code><p></p>
+    <code>##</code><p></p>
+    <code>Text 2: OpenAI has trained cutting-edge language models that are very good at understanding and generating text. Our API provides access to these models and can be used to solve virtually any task that involves processing language.</code><p></p>
+    <code>Keywords 2: OpenAI, language models, text processing, API.</code><p></p>
+    <code>##</code><p></p>
+    <code>Text 3: {text}</code><p></p>
+    <code>Keywords 3:</code><p></p>
+
     <h1>References</h1>
     <ul>
         <li><a href="https://www.promptingguide.ai/introduction/elements">Elements of a Prompt</a></li>
