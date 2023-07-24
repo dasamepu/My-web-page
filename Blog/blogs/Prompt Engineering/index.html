@@ -106,6 +106,31 @@
     <code># 2. It converts miles to kilometers</code><p></p>
     <code>import</code><p></p>
 
+    <h1>Cadena de pensamiento (Chain-of-thought)</h1>
+    <p>Es una tecnica de prompt engineering que se basa en descomponer una tarea en pequeñas tareas para generar un mejor resultado a un problema.</p>
+    <p>Por ejemplo, sin usar Chain-of-thought:</p>
+    <code>Halla el determinante de una matriz A 2x2 cuyos elementos son:</code><p></p>
+    <code>A11= 3</code><p></p>
+    <code>A12= -4</code><p></p>
+    <code>A21= 1</code><p></p>
+    <code>A22= 2</code><p></p>
+    <p>Utilizando Chain-of-thought:</p>
+    <code>Q: Halla el determinante de una matriz A 2x2 cuyos elementos son:</code><p></p>
+    <code>A11= 3</code><p></p>
+    <code>A12= -4</code><p></p>
+    <code>A21= 1</code><p></p>
+    <code>A22= 2</code><p></p>
+    <p></p>
+    <code>A: Paso 1: Multiplicar A11 con A22 = 3 * 2 = 6</code><p></p>
+    <code>Paso 2: Multiplicar A12 con A21 = (-4) * 1 = -4</code><p></p>
+    <code>Paso 3: Restar el resultado del paso 1 con el resultado del paso 2 = 6 - (-4) = 10</code><p></p>
+    <code>Q: Halla el determinante de una matriz A 2x2 cuyos elementos son:</code><p></p>
+    <code>A11= 4</code><p></p>
+    <code>A12= 1</code><p></p>
+    <code>A21= 6</code><p></p>
+    <code>A22= 2</code><p></p>
+    <p>A medida que los modelos de lenguage vayan avanzando en problemas simples será cada vez menos necesaria esta tecnica pero en problemas mas complejos siempre será util ésta.</p>
+
     <h1>References</h1>
     <ul>
         <li><a href="https://www.promptingguide.ai/introduction/elements">Elements of a Prompt</a></li>
