@@ -175,6 +175,23 @@
     <p>Ya al integrar nuevo conocimiento al LLM podemos hacer prompts como: </p>
     <code>hazme una tabla comparativa entre el metodo roux y el metodo fridrich</code>
 
+    <h1>Hiperparametros</h1>
+    <table>
+        <tr>
+            <th>n</th>
+            <th>Establece cuantas respuestas pueden salir a partir de un input</th>
+        </tr>
+        <tr>
+            <th>temperature</th>
+            <th>Establece la aleatoriedad de un output mientras mayor sea el parametro por ejemplo 0.9 más aleatorio será el output, mientras sea más cercano a cero menos aleatorio será el output
+            </th>
+        </tr>
+        <tr>
+            <th>top_p</th>
+            <th>Es un filtro que selecciona las palabras hasta que la probabilidad acumulada supere el porcentage establecido, mientras mas cercano al 100% sea top_p menos restricciones en la selección de palabras tendrá el modelo lo que hace la respuesta más interesantes y menos comunes, mientras que al establecer un valor de top_p mas cercano a cero este hace que se haya mas restricciones al momento de la elección de palabras, lo que hace las respuestas mas concisas y directas.</th>
+        </tr>
+    </table>
+
     <h1>References</h1>
     <ul>
         <li><a href="https://www.promptingguide.ai/introduction/elements">Elements of a Prompt</a></li>
