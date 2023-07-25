@@ -151,11 +151,29 @@
     <p>y despues le puedes decir:</p>
     <code>Usando los hechos sobre la bandeja paisa y sobre la historia de antioquia y el eje cafetero escribe un blog de 5 parrafos sobre la bandeja paisa usando un tono de editorial</code>
 
-
-
-
-
-    <h1></h1>
+    <h1>Knowledge Integration</h1>
+    <p>Integrar nuevo conocimiento a la base de conocimiento que ya tiene el modelo de IA.</p>
+    <p>Por ejemplo, si yo le pregunto algo que el LLM no sepa entonces no me va a responder lo que necesito:</p>
+    <code>explicame paso a paso el metodo roux para resolver el cubo de rubik</code>
+    <p>Para ello tenemos que integrar al LLM nuevo conocimiento para que pueda generar un mejor resultado:</p>
+    <code>Integra la siguiente información con tu conocimiento de metodos de resoluión de cubos rubik</code><p></p>
+    <code>información: """</code><p></p>
+    <code>El método Roux consiste de 4 sencillos pasos:</code><p></p>
+    <code>1.- Hacer un bloque de 1x2x3 en una cara del cubo.</code><p></p>
+    <code>2.- en la cara contraria hacer otro bloque 1x2x3, de tal forma que queden paralelos.</code><p></p>
+    <code>3.- se orientan las esquinas por método oll</code><p></p>
+    <code>4.-los centros y aristas se orientan usando solo las capas m y u</code><p></p>
+    <code>4.a.- Orientación de las aristas</code><p></p>
+    <code>Empezamos con un paso de orientación, solo necesitamos orientar las aristas correctamente, las aristas moradas son mal orientadas, negras bien orientadas y gris las de los pasos anteriores.</code><p></p>
+    <code>4.b.- Terminar lados izquierdo y derecho</code><p></p>
+    <code>Para resolver las aristas UL y UR hay una complicación, deberás mantener bien orientadas las aristas.</code><p></p>
+    <code>Las imágenes ayudan a identificar los casos</code><p></p>
+    <code>4.c.-Permutar aristas M(sin imágenes)</code><p></p>
+    <code>Los casos son fáciles de identificar, deberás poder ejecutar los algoritmos inmediatamente.</code><p></p>
+    <code>Solo existen 3 casos U2MU2, U2M2U2 Y E2ME2( este último a pesar de parecer difícil se realiza en 1 segundo y se anticipa antes de terminar 4.b)</code><p></p>
+    <code>"""</code>
+    <p>Ya al integrar nuevo conocimiento al LLM podemos hacer prompts como: </p>
+    <code>hazme una tabla comparativa entre el metodo roux y el metodo fridrich</code>
 
     <h1>References</h1>
     <ul>
